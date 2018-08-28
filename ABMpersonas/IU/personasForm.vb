@@ -47,7 +47,7 @@
 
 
 
-        'Mipersona.Id = CInt(TextBox7.Text)
+        Mipersona.Id = CInt(TextBox7.Text)
         Mipersona.Nombre = TextBox1.Text
         Mipersona.Direccion = TextBox2.Text
         Mipersona.CodPostal = CInt(TextBox3.Text)
@@ -66,11 +66,11 @@
             Case "Eliminar"
 
 
-                lst.RemoveAt(indice_)
+                lst.EliminarPersona(Mipersona)
 
             Case "Modificar"
 
-                lst.Item(indice_) = Mipersona
+                lst.ActualizarPersona(Mipersona)
 
 
 

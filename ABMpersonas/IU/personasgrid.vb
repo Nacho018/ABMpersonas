@@ -59,8 +59,8 @@
 
         personasForm.TextBox7.Text = DataGridView1.CurrentRow.Cells("Id").Value.ToString
         personasForm.TextBox1.Text = DataGridView1.CurrentRow.Cells("Nombre").Value.ToString
-        personasForm.TextBox2.Text = DataGridView1.CurrentRow.Cells("CodPostal").Value.ToString
-        personasForm.TextBox3.Text = DataGridView1.CurrentRow.Cells("Direccion").Value.ToString
+        personasForm.TextBox3.Text = DataGridView1.CurrentRow.Cells("CodPostal").Value.ToString
+        personasForm.TextBox2.Text = DataGridView1.CurrentRow.Cells("Direccion").Value.ToString
         personasForm.ComboBox1.Text = DataGridView1.CurrentRow.Cells("TipoDocumento").Value.ToString
         personasForm.TextBox4.Text = DataGridView1.CurrentRow.Cells("NumeroDocumento").Value.ToString
         personasForm.ComboBox2.Text = DataGridView1.CurrentRow.Cells("nombreProvincia").Value.ToString
