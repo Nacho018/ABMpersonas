@@ -50,7 +50,7 @@
         'Mipersona.Id = CInt(TextBox7.Text)
         Mipersona.Nombre = TextBox1.Text
         Mipersona.Direccion = TextBox2.Text
-        Mipersona.CodPostal = TextBox3.Text
+        Mipersona.CodPostal = CInt(TextBox3.Text)
         Mipersona.IdProvincia = ComboBox1.SelectedIndex
         Mipersona.TipoDocumento = ComboBox2.SelectedIndex
         Mipersona.NumeroDocumento = TextBox4.Text
