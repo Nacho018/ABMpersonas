@@ -37,14 +37,14 @@ Partial Class personasgrid
         Me.Salir = New System.Windows.Forms.ToolStripButton
         Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.nombreProvincia = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.CodPostalDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.DireccionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.TipoDocumentoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.NumeroDocumentoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.PersonascollectionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Id = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.TipoDocumento = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.NumeroDocumento = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.CodPostal = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.nombreProvincia = New System.Windows.Forms.DataGridViewTextBoxColumn
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
@@ -165,7 +165,7 @@ Partial Class personasgrid
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.CodPostalDataGridViewTextBoxColumn, Me.DireccionDataGridViewTextBoxColumn, Me.TipoDocumentoDataGridViewTextBoxColumn, Me.NumeroDocumentoDataGridViewTextBoxColumn, Me.nombreProvincia})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id, Me.Nombre, Me.Direccion, Me.TipoDocumento, Me.NumeroDocumento, Me.CodPostal, Me.nombreProvincia})
         Me.DataGridView1.DataSource = Me.PersonascollectionBindingSource
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(0, 121)
@@ -176,58 +176,58 @@ Partial Class personasgrid
         Me.DataGridView1.Size = New System.Drawing.Size(1028, 628)
         Me.DataGridView1.TabIndex = 4
         '
+        'PersonascollectionBindingSource
+        '
+        Me.PersonascollectionBindingSource.DataSource = GetType(ABMpersonas.personascollection)
+        '
+        'Id
+        '
+        Me.Id.DataPropertyName = "Id"
+        Me.Id.HeaderText = "Id"
+        Me.Id.Name = "Id"
+        Me.Id.ReadOnly = True
+        '
+        'Nombre
+        '
+        Me.Nombre.DataPropertyName = "Nombre"
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        '
+        'Direccion
+        '
+        Me.Direccion.DataPropertyName = "Direccion"
+        Me.Direccion.HeaderText = "Direccion"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        '
+        'TipoDocumento
+        '
+        Me.TipoDocumento.DataPropertyName = "TipoDocumento"
+        Me.TipoDocumento.HeaderText = "TipoDocumento"
+        Me.TipoDocumento.Name = "TipoDocumento"
+        Me.TipoDocumento.ReadOnly = True
+        '
+        'NumeroDocumento
+        '
+        Me.NumeroDocumento.DataPropertyName = "NumeroDocumento"
+        Me.NumeroDocumento.HeaderText = "NumeroDocumento"
+        Me.NumeroDocumento.Name = "NumeroDocumento"
+        Me.NumeroDocumento.ReadOnly = True
+        '
+        'CodPostal
+        '
+        Me.CodPostal.DataPropertyName = "CodPostal"
+        Me.CodPostal.HeaderText = "CodPostal"
+        Me.CodPostal.Name = "CodPostal"
+        Me.CodPostal.ReadOnly = True
+        '
         'nombreProvincia
         '
         Me.nombreProvincia.DataPropertyName = "nombreProvincia"
         Me.nombreProvincia.HeaderText = "nombreProvincia"
         Me.nombreProvincia.Name = "nombreProvincia"
         Me.nombreProvincia.ReadOnly = True
-        '
-        'IdDataGridViewTextBoxColumn
-        '
-        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "Id"
-        Me.IdDataGridViewTextBoxColumn.HeaderText = "Id"
-        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
-        Me.IdDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'NombreDataGridViewTextBoxColumn
-        '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'CodPostalDataGridViewTextBoxColumn
-        '
-        Me.CodPostalDataGridViewTextBoxColumn.DataPropertyName = "CodPostal"
-        Me.CodPostalDataGridViewTextBoxColumn.HeaderText = "CodPostal"
-        Me.CodPostalDataGridViewTextBoxColumn.Name = "CodPostalDataGridViewTextBoxColumn"
-        Me.CodPostalDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'DireccionDataGridViewTextBoxColumn
-        '
-        Me.DireccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion"
-        Me.DireccionDataGridViewTextBoxColumn.HeaderText = "Direccion"
-        Me.DireccionDataGridViewTextBoxColumn.Name = "DireccionDataGridViewTextBoxColumn"
-        Me.DireccionDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'TipoDocumentoDataGridViewTextBoxColumn
-        '
-        Me.TipoDocumentoDataGridViewTextBoxColumn.DataPropertyName = "TipoDocumento"
-        Me.TipoDocumentoDataGridViewTextBoxColumn.HeaderText = "TipoDocumento"
-        Me.TipoDocumentoDataGridViewTextBoxColumn.Name = "TipoDocumentoDataGridViewTextBoxColumn"
-        Me.TipoDocumentoDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'NumeroDocumentoDataGridViewTextBoxColumn
-        '
-        Me.NumeroDocumentoDataGridViewTextBoxColumn.DataPropertyName = "NumeroDocumento"
-        Me.NumeroDocumentoDataGridViewTextBoxColumn.HeaderText = "NumeroDocumento"
-        Me.NumeroDocumentoDataGridViewTextBoxColumn.Name = "NumeroDocumentoDataGridViewTextBoxColumn"
-        Me.NumeroDocumentoDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'PersonascollectionBindingSource
-        '
-        Me.PersonascollectionBindingSource.DataSource = GetType(ABMpersonas.personascollection)
         '
         'personasgrid
         '
@@ -266,11 +266,11 @@ Partial Class personasgrid
     Friend WithEvents ToolStripLabel4 As System.Windows.Forms.ToolStripLabel
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents PersonascollectionBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents IdDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NombreDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CodPostalDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DireccionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TipoDocumentoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NumeroDocumentoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Id As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Direccion As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TipoDocumento As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NumeroDocumento As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CodPostal As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombreProvincia As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
