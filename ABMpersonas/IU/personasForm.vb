@@ -45,9 +45,11 @@
 
     Private Sub Aceptar_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Aceptar.Click
 
+        If operacion <> "Agregar" Then
 
+            Mipersona.Id = CInt(TextBox7.Text)
 
-        Mipersona.Id = CInt(TextBox7.Text)
+        End If
         Mipersona.Nombre = TextBox1.Text
         Mipersona.Direccion = TextBox2.Text
         Mipersona.CodPostal = CInt(TextBox3.Text)
